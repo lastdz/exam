@@ -6,6 +6,7 @@ import (
 )
 
 func initRouter(r *gin.Engine) {
+	r.GET("/zjh", controller.Analys)
 	// public directory is used to serve static resources
 	r.Static("/static", "./public")
 
